@@ -34,7 +34,7 @@ func connectToSnowflake() (*sql.DB, error) {
 	return db, nil
 }
 
-// Actual query function definition
+// Main Query function definition
 func executeQuery(db *sql.DB, query string) (*sql.Rows, error) {
 	rows, err := db.Query(query)
 	if err != nil {
